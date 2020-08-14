@@ -1,5 +1,9 @@
+
 Ennen kun yrittää avata palvelinta:
 
+Asenna Node
+Asenna Xampp
+avaa MYSQL
 npm install express
 npm install ejs
 npm install cors
