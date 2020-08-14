@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="tyylit.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1><%= otsikko %></h1>
+        <form id="autolomake" action="<%= toiminto %>" method="POST">
+            <p>
+                <label for="kukanTunniste">kukanTunniste:</label>
+                <input type="text" id="kukanTunniste" name="kukanTunniste" size="5" value="<%= kukanTunniste.arvo %>" required
+                    <%= kukanTunniste.vainluku %>>
+            </p>
+            <p>
+                <label for="laji">laji:</label>
+                <input type="text" id="laji" name="laji" size="20" value="<%= laji.arvo %>" required
+                    <%= laji.vaunluku %>>
+            </p>
+            <p>
+                <label for="viljelija">viljelija:</label>
+                <input type="text" id="viljelija" name="viljelija" size="10" value="<%= viljelija.arvo %>"
+                    <%= viljelija.vainluku %>>
+            </p>
+            <p>
+                <label for="lukumaara">lukumaara:</label>
+                <input type="text" id="lukumaara" name="lukumaara" size="10" value="<%= lukumaara.arvo %>"
+                    <%= lukumaara.vainluku %>>
+            </p>
+            <p>
+                <label for="kasvupaikka">kasvupaikka:</label>
+                <input type="text" id="kasvupaikka" name="kasvupaikka" size="10" value="<%= kasvupaikka.arvo %>"
+                    <%= kasvupaikka.vainluku %>>
+            </p>
+            <div id="napit">
+                <button class="nappi" type="submit">Lähetä</button>
+                <a class="nappi" href="/">Valikkoon</a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

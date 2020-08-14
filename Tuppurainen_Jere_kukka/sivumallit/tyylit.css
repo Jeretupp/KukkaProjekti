@@ -1,0 +1,60 @@
+body {
+    background-color: purple;
+}
+
+main {
+    display:grid;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+tr:nth-child(odd) {
+    background-color: peachpuff;
+}
+
+
+button {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 13em;
+    height: 3em;
+    border: 0.1em solid black;
+    border-radius:  0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rbg(0,0,0);
+    margin-bottom:0.3em;
+    margin-top:0.3em;
+    background-color: brown;
+    color: white;
+}
+
+label, .selite{
+    font-weight: bold;
+}
+#viestialue, #kentat > div {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+a {
+    color:white;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }

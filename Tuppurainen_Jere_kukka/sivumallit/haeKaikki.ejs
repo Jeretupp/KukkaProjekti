@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kaikki autot</title>
+    <link rel="stylesheet" href="tyylit.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h2>Kaikki autot</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>kukanTunniste</th>
+                    <th>Laji</th>
+                    <th>viljelija</th>
+                    <th>lukumaara</th>
+                    <th>kasvupaikka</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% kukka.forEach(kukka => { %>
+                <tr>
+                    <td>
+                        <%= kukka.kukanTunniste %>
+                    </td>
+                    <td>
+                        <%= kukka.laji %>
+                    </td>
+                    <td>
+                        <%= kukka.viljelija %>
+                    </td>
+                    <td>
+                        <%= kukka.lukumaara %>
+                    </td>
+                    <td>
+                        <%=kukka.kasvupaikka %>
+                    </td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <a class="nappi" href="/">Valikkoon</a>
+    </main>
+</body>
+
+</html>

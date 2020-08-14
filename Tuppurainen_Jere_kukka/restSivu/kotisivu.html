@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <title>RestDemo</title>
+    <style>
+        pre,
+        textarea {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+    </style>
+    <script src="rest.js"></script>
+</head>
+
+<body>
+    <p id="uri">
+        <label>Syötä uri muodossa http://localhost:3000/kukat/1</label>
+        <input type="text" id="urikentta" size="50">
+    </p>
+    <fieldset>
+        <legend>Valitse metodi:</legend>
+        <label><input type="radio" name="metodi" id="GET">HAE</label>
+        <label><input type="radio" name="metodi" id="POST">MUOKATAAN</label>
+        <label><input type="radio" name="metodi" id="PUT">LISÄTÄÄN</label>
+        <label><input type="radio" name="metodi" id="DELETE">POISTA</label>
+    </fieldset>
+    <div id="jsonalue">
+        <h2>Json</h2>
+        <textarea type="text" id="jsonteksti"></textarea>
+    </div>
+    <button id="lahetaJson">Lähetä</button>
+    <div>
+        <h2>Tulos</h2>
+        <pre id="tulosalue"></pre>
+    </div>
+</body>
+
+</html>

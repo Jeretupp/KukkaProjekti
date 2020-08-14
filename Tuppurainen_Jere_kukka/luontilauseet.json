@@ -1,0 +1,39 @@
+{
+    "palvelin": "localhost",
+    "portti": 3306,
+    "paakayttaja": "root",
+    "paakayttajanSalasana": "",
+    "kayttaja": "rauha",
+    "kayttajanSalasana": "WfXuBbym",
+    "poistaKayttaja": true,
+    "debugKaytossa": true,
+    "tietokanta": "kukkatietokanta",
+    "taulut": [
+        {
+            "taulunNimi": "kukka",
+            "sarakkeet": [
+                "kukanTunniste integer primary key",
+                "laji varchar(20) not null",
+                "viljelija varchar(20)",
+                "lukumaara integer not null",
+                "kasvupaikka varchar(20) not null"
+            ],
+            "tiedot": [
+                [
+                    1,
+                    "Ruusu",
+                    "Pete",
+                    "120",
+                    "Helsinki"
+                ],
+                [
+                    2,
+                    "Kielo",
+                    "Saku",
+                    "15",
+                    "Porvoo"
+                ]
+            ]
+        }
+    ]
+}

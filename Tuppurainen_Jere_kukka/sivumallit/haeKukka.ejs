@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="tyylit.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1><%= otsikko %></h1>
+        <form action="<%= toiminto %>" method="post">
+            <p>
+                <label for="kukanTunniste">kukanTunniste:</label>
+                <input type="text" id="kukanTunniste" name="kukanTunniste" size="5">
+            </p>
+            <button class="nappi" type="submit">Lähetä</button>
+        </form>
+        <a class="nappi" href="/">Valikko</a>
+    </main>
+</body>
+
+</html>
